@@ -7,7 +7,7 @@
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <style>
     body {
-      background: linear-gradient(135deg, #ff8c66, #f0f0f0, #66cc66);
+      background: linear-gradient(135deg, #3f302b, #140101, #1c4d1c);
       animation: gradient 25s ease infinite;
       background-size: 200% 200%;
       position: relative;
@@ -134,16 +134,16 @@
 <body>
   <div id="watermark">Ekta Pariwar</div>
   <div class="text-center p-8 max-w-3xl w-full relative">
-    <h1 class="text-5xl font-extrabold mb-4 neon-text">Congratulations, [Your Friend's Name]!</h1>
+    <h1 class="text-5xl font-extrabold mb-4 neon-text">Congratulations, [NAWAB GOURI]</h1>
     <div class="media-container">
       <img src="https://i.imgur.com/j2nPNc3.jpeg?t=${Date.now()}" alt="Winner Photo" class="winner-photo rounded-xl shadow-2xl border-4 border-yellow-400" onerror="this.src='https://via.placeholder.com/300x200?text=Winner+Photo'; console.error('Failed to load winner photo:', this.src)">
       <iframe id="dance-video" src="https://player.vimeo.com/video/1105391428?autoplay=0&muted=0" width="400" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen class="hidden"></iframe>
     </div>
-    <p class="text-xl mb-4 neon-text">Celebrating your legendary victory in the election! Let's light up the sky!</p>
+    <p class="text-xl mb-4 neon-text">Uski jeet se jyada teri haar ki charcha hai bhai </p>
     <p class="text-lg mb-6">Celebrations so far: <span id="celebration-count" class="font-bold">0</span></p>
 
     <div class="mb-8">
-      <button id="celebrate-btn" class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 mr-4">Light Up Fireworks & Dance!</button>
+      <button id="celebrate-btn" class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 mr-4">Udaas mat ho ladle</button>
     </div>
 
     <div class="mb-8">
@@ -299,23 +299,7 @@
       ctx.lineWidth = 3;
       ctx.strokeText('VICTORY!', 150, 180);
       // Draw a simple crown
-      ctx.beginPath();
-      ctx.moveTo(100, 50);
-      ctx.lineTo(120, 30);
-      ctx.lineTo(140, 50);
-      ctx.lineTo(160, 30);
-      ctx.lineTo(180, 50);
-      ctx.lineTo(200, 30);
-      ctx.lineTo(220, 50);
-      ctx.fillStyle = '#ffd700';
-      ctx.fill();
-      ctx.strokeStyle = '#000';
-      ctx.lineWidth = 2;
-      ctx.stroke();
-      downloadCrown.href = badgeCanvas.toDataURL('image/png');
-      downloadCrown.download = 'victory-crown.png';
-      downloadCrown.classList.remove('hidden');
-      console.log('Crown added, download link enabled');
+      
     });
 
     // Wishes Submission
